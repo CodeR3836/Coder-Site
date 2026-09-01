@@ -18,9 +18,9 @@
     --bg-secondary: #06111D;
     --card: #0A1928;
 
-    --primary: #00D9FF;   /* Cyan */
-    --secondary: #0066FF; /* Blue */
-    --accent: #00FFA3;    /* Mint */
+    --primary: #00D9FF; 
+    --secondary: #0066FF; 
+    --accent: #00FFA3;    
 
     --text: #E9F9FF;
     --muted: #718B9E;
@@ -1293,7 +1293,6 @@ body{
 }
 
 
-/* ===== TRACKER ===== */
 
 .tracker {
     position: relative;
@@ -1335,7 +1334,6 @@ body{
     overflow: hidden;
 }
 
-/* Loading / error state */
 .tracker-state-msg {
     color: var(--muted);
     font-family: 'Inter', sans-serif;
@@ -1348,7 +1346,6 @@ body{
     color: rgba(255, 80, 80, 0.8);
 }
 
-/* Scrollable wrapper — month row + grid scroll together */
 .tracker-scroll {
     width: 100%;
     overflow-x: auto;
@@ -1374,7 +1371,6 @@ body{
     background: var(--primary);
 }
 
-/* Inner wrapper — min-content wide so scroll works */
 .tracker-inner {
     display: flex;
     flex-direction: column;
@@ -1382,7 +1378,6 @@ body{
     min-width: 100%;
 }
 
-/* Month labels row */
 .tracker-months-row {
     position: relative;
     margin-left: 46px;
@@ -1402,14 +1397,12 @@ body{
     user-select: none;
 }
 
-/* Row: day labels + grid */
 .tracker-body {
     display: flex;
     gap: 10px;
     align-items: flex-start;
 }
 
-/* Day labels column */
 .tracker-days {
     display: flex;
     flex-direction: column;
@@ -1429,7 +1422,6 @@ body{
     letter-spacing: 0.5px;
 }
 
-/* Contribution grid: 7 rows, auto columns flowing column-by-column */
 .tracker-grid {
     display: grid;
     grid-template-rows: repeat(7, 14px);
@@ -1437,7 +1429,6 @@ body{
     gap: 4px;
 }
 
-/* Individual cell */
 .tracker-cell {
     width: 14px;
     height: 14px;
@@ -1459,7 +1450,6 @@ body{
     pointer-events: none;
 }
 
-/* Contribution levels */
 .level-0 {
     background: rgba(0, 217, 255, 0.04);
     border: 1px solid rgba(0, 217, 255, 0.10);
@@ -1502,7 +1492,6 @@ body{
     border-color: var(--primary);
 }
 
-/* Tooltip */
 .tracker-tooltip {
     position: fixed;
     background: var(--card);
@@ -1535,7 +1524,6 @@ body{
     font-weight: 600;
 }
 
-/* Legend */
 .tracker-legend {
     display: flex;
     align-items: center;
@@ -1557,7 +1545,6 @@ body{
     border-radius: 2px;
 }
 
-/* Tracker button */
 .tracker-button {
     grid-column: 2;
     grid-row: 1;
@@ -1595,7 +1582,6 @@ body{
     font-weight: 600;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
     .tracker {
         grid-template-columns: 1fr;
